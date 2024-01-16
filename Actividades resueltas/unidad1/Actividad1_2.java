@@ -2,7 +2,7 @@ package unidad1;
 
 import java.util.Scanner;
 
-public class actividad1_2 {
+public class Actividad1_2 {
 
     public static void main(String[] args) {
 
