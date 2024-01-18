@@ -28,6 +28,12 @@ public class Actividad1_10 {
         System.out.println("¿Has terminado tus deberes? (true/false)");
         terminarTarea=sc.nextBoolean();
         System.out.println("");
+        System.out.println("¿Tienes que salir a la biblioteca? (true/false)");
+        irBiblioteca=sc.nextBoolean();
+        System.out.println("");
+
+        boolean salir= !llover && terminarTarea || irBiblioteca;
+        System.out.println("Puedes salir: " + salir  );
 
 
 
