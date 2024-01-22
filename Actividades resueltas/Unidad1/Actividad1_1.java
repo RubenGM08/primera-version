@@ -1,4 +1,4 @@
-package unidad1;
+package Unidad1;
 
 public class Actividad1_1 {
     public static void main(String[] args) {
