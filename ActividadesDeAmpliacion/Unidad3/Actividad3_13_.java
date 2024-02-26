@@ -32,6 +32,7 @@ public class Actividad3_13_ {
         System.out.print("Dame los segundos -> ");
         segundos= sc.nextInt();
 
+
         System.out.println("La hora es -> " + hora + ":" + minutos + ":" + segundos);
         System.out.println(" ");
 
@@ -49,7 +50,10 @@ public class Actividad3_13_ {
             } if (hora==24){
             hora=0;
             }
+
         }
+
+
 
         System.out.println("Ahora la hora segun los segundos ->" + veces);
         System.out.println("La hora más 10s es -> " + hora + ":" + minutos + ":" + segundos);
