@@ -1,4 +1,11 @@
 package Unidad5;
+/**
+ * Tema 5
+ * Actividad resuelta 5.5
+ * Escribir la función int[[ rellenaPares(int longitud, int final), que crea y devuelva
+ * una tabla ordenada de la longitud especificada, que se encuentra rellena con números
+ * pares aleatorios comprendidos en el rango desde 2 hasta el fin(inclusive)
+ */
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -12,7 +19,7 @@ public class ActividadResuelta5_5 {
         int fin=sc.nextInt();
         int pares[]=new int[longitud];
         for (int i = 0; i < pares.length; i++) {
-            int num=(int) Math.random()*fin+1;
+            int num=(int)(Math.random()*fin+1);
             if (num%2==0){
                 pares[i]=num;
             }else {
