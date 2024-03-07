@@ -36,6 +36,7 @@ public class ActividadResuelta5_6 {
             apuesta[i]= sc.nextInt();
 
         }
+
         mostrar(Arrays.toString(apuesta));mostrar(Arrays.toString(conbinacionGandora));
         mostrar("Numero de Aciertos en tu Apuesta " + primitiva(apuesta,conbinacionGandora));
     }
@@ -50,6 +51,7 @@ public class ActividadResuelta5_6 {
                 aciertos++; //hemos acertado ese numero
             }
         }
+
         return aciertos;
     }
 
