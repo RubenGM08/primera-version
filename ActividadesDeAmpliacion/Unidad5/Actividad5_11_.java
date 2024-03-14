@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  * Actividades De Ampliacion
- * Tema 3
+ * Tema 5
  * Actividad 5.11
  * Realiza la función: int[] buscarTodos(int t[], int clave), que crea y devuelve una
  * tabla con todos los índices de los elementos donde se encuentra la clave de búsqueda. En

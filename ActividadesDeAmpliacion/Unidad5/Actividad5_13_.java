@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  * Actividades De Ampliacion
- * Tema 3
+ * Tema 5
  * Actividad 5.13
  * Modifica la Actividad de aplicación 5.12 para que la función no modifique la tabla que se
  * pasa como parámetro y, en su lugar, cree y devuelva una copia de la tabla donde se han

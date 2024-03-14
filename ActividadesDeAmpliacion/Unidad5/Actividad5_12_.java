@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  * Actividades De Ampliacion
- * Tema 3
+ * Tema 5
  * Actividad 5.12
  * Escribe la función void desordenar(int t[]), que cambia de forma aleatoria los
  * elementos contenidos en la tabla t. Si la tabla estuviera ordenada, dejaría de estarlo.
