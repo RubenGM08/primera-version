@@ -3,6 +3,8 @@ package Unidad5;
 import java.util.Arrays;
 
 /**
+ * Tema 5
+ * Actividad resuelta 5.1
  * Crear una tabla de longitud 10 que se inicializará con números aleatorios comprendidos
  * entre 1 y 100. Mostrar la suma de todos los números aleratorios que se guardan en la tabla.
  */
