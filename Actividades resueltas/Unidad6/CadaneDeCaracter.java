@@ -157,24 +157,6 @@ public class CadaneDeCaracter {
         letra=frase.charAt(0);
         mostrar("El indice dos de la frase \n" + frase + "\n ¿Esta en Mayúscula? -> " + Character.isUpperCase(letra));
         mostrar("El indice dos de la frase \n" + frase + "\n ¿Esta en Minuscula? -> " + Character.isLowerCase(letra));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
 

@@ -2,6 +2,18 @@ package Unidad3;
 
 import java.util.Scanner;
 
+/**
+ * Tema 3
+ * Actividad Resuelta 3.15
+ * Pedir por consola un número n y dibujar un triángulo resctángulo de n elementos de lado,
+ * utilizando para ello asteriscos (*). por ejemplo, para n = 4:
+ *
+ *  * * * *
+ *  * * *
+ *  * *
+ *  *
+ *
+ */
 public class ActividadResuelta3_15 {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
