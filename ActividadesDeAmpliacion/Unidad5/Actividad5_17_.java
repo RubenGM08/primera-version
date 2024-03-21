@@ -1,5 +1,7 @@
 package Unidad5;
 
+import java.util.Scanner;
+
 /**
  * Actividades De Ampliacion
  * Tema 5
@@ -17,8 +19,29 @@ package Unidad5;
  */
 
 public class Actividad5_17_ {
+
+    static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
 
-
     }
+
+
+
+    /**
+     * Metodo para mostrar en consola los texto con salto de línea
+     * @param texto
+     */
+
+    public static void mostrar(String texto) { System.out.println("\t" + texto); }
+
+
+    /**
+     * Metodo para mostrar en consola los texto con salto de línea
+     * @param texto
+     */
+
+    public static void mostrarSinLn(String texto) { System.out.print("\t" + texto); }
+
+
 }
