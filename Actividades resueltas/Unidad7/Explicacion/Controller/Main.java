@@ -1,4 +1,8 @@
-package Unidad7.Explicacion;
+
+package Unidad7.Explicacion.Controller;
+
+import Unidad7.Explicacion.Clases.Persona;
+
 
 public class Main {
 
@@ -27,7 +31,7 @@ public class Main {
                 + "\nPeso-> " + persona2.peso
                 + "\nEstatura-> " + persona2.estatura
                 + "\nDNI-> " + persona2.dni);
-        persona2.cumpilAñio();
+        persona2.cumplirAnio();
         persona1.crecer(0.05);
     }
 
