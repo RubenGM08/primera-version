@@ -2,6 +2,8 @@ package Unidad7.Actividad7_11R.Controller;
 
 import Unidad7.Actividad7_11R.Clases.Lista;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         Lista lista=new Lista();
@@ -17,8 +19,19 @@ public class Main {
         listado.insertarUltimo(5);
         listado.insertarUltimo(6);
         listado.insertarUltimo(7);
-        listado.insertrConIndice(4,10);
+        listado.insertarConIndice(4,10);
         listado.mostrarElementos();
+
+        lista.insertarLista(listado);
+        lista.mostrarElementos();
+        lista.eliminarIndice(100);
+        lista.mostrarElementos();
+        lista.buscarNumero(100);
+
+        //Explicacion de Wrappers
+        //Integer y el Double se puede declarar en null
+        Double num1=null;
+        System.out.println(num1);
 
 
     }
