@@ -5,12 +5,7 @@ public class Calculadora {
     // VARIABLES DE LA CLASE
     public double num1; // Primer número para operaciones.
     public double num2; // Segundo número para operaciones.
-    public double suma; // Almacena el resultado de la suma.
-    public double resta; // Almacena el resultado de la resta.
-    public double multiplicar; // Almacena el resultado de la multiplicación.
-    public double dividir; // Almacena el resultado de la división.
-    public double resto; // Almacena el resultado del resto.
-    public double exponencia; // Almacena el resultado del exponente.
+
 
     // CONSTRUCTOR
     public Calculadora(double num1, double num2) {
