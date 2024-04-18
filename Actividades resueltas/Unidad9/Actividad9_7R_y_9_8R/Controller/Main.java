@@ -44,10 +44,20 @@ public class Main {
         mostrar("Elige tu opcion-> ");
         opcion= sc.nextInt();
             switch (opcion){
-                case 1->altaSocio();
+                case 1->Lista.add(altaSocio());
+
                 case 2->mostrarListaSocio();
                 case 3->{
-
+                    //Para buscar un elemento y nos diga su posicion, utilizar si es de tipo String indexOf
+                    int idA= leerID();
+                    for (Socio e:Lista){
+                        if (e.getId() == idA){
+                            System.out.println(e.toString());
+                            int posicion= Lista.indexOf(e);
+                            mostrar("Posicion-> " + posicion);
+                            break;
+                        }
+                    }
                 }
             }
         }while (opcion!=5);
@@ -69,21 +79,21 @@ public class Main {
 
     public static void mostrarSinLn(String texto) { System.out.print("\t" + texto); }
 
-    public static void altaSocio(){
+    public static int leerID(){
+        int idLeido;
+        mostrarSinLn("Indique el Id del Socio->");
+        idLeido=sc.nextInt();
+        return idLeido;
+    }
+
+    public static Socio altaSocio(){
         int idT=leerID();
         mostrarSinLn("Nombre->");
         nombre= sc.next();sc.nextLine();
         mostrarSinLn("Fecha de nacimiento-> (yyyy-MM-dd)");
         fnT= sc.next();sc.nextLine();
         Socio socio1=new Socio(idT,nombre,fnT);
-        Lista.add(socio1);
-    }
-
-    public static int leerID(){
-        int idLeido;
-        mostrarSinLn("Indique el Id del Socio->");
-        idLeido=sc.nextInt();
-        return idLeido;
+        return socio1;
     }
 
 
