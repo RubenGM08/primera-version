@@ -1,0 +1,161 @@
+/*
+Tenemos 3 tipos de selectores principales
+por id ->#nombre
+por tagname-> p
+por clase -> .contenedor (cualquier nombre)
+Eje:
+.contenedor{
+    background-color: black;
+    width: 100%;
+    height:200px;
+    color:white;
+}
+
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100%;
+}
+
+.contenedor{
+    background-color: black;
+    width: 100%;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+}
+.contenedor a{
+    text-decoration: none;
+    color:white;
+}
+.contenedorLT{
+    max-width: 80%;
+    margin: auto;
+}
+
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.66%
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+   width: 33.33%;
+}
+.col-5{
+    width: 41.66%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.33%;
+}
+.col-8{
+    width: 66.66%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.33% ;
+}
+.col-11{
+    width: 91.66%;
+}
+.col-12{
+    width: 100%;
+}
+header,footer{
+    background-color: darkgray;
+}
+header,footer,.contenedorHijos,.contenedorHijos div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, sans-serif;
+}
+
+header{
+    height: 100vh;
+
+    margin-bottom: 50px;
+}
+footer{
+    margin-top: 50px;
+    height: 200px;
+}
+.contenedorHijos{
+    margin: 25px auto;
+
+}
+.contenedorHijos div{
+    height: 300px;
+    margin: 25px;
+    padding: 25px;
+    background-color: darkgray;
+}
+
+@media only screen and (width<=768px) {
+    [class*="col-"]{
+        width: 100%;
+    }
+    .contenedorHijos{
+        flex-direction: column;
+    }
+}
+
+/* Media Querys*/
+
+@media only screen and (width>768px) and (width<=992px)  {
+    .col-1,.col-2,.col-3,.col-4,.col-5{
+        width: 50%;
+    }
+
+    .col-7,.col-8,.col-9,.col-10,.col-11{
+        width: 100%;
+    }
+}
+
+.borde-line{
+    border: 1px solid darkgoldenrod;
+}
+
+.borde-double{
+    border: 3px double darkgoldenrod;
+}
+
+.borde-puntos{
+    border: 1px dotted darkgoldenrod;
+}
+
+.borde-guiones{
+    border: 1px dashed darkgoldenrod;
+}
+
+.borde-redondo{
+    border-radius: 5px;
+}
+
+.borde-redondo-abajo{
+    border-radius: 0 0 10px 10px;
+}
+
+.borde-redondo-arriba{
+    border-radius: 10px 10px 0 0;
+}
+
+.borde-sombra{
+    box-shadow: 10px 10px 5px 0px rgba(56,7,56,1);
+    +
+}

@@ -3,13 +3,14 @@ package Unidad9.Actividad9_7R_y_9_8R.Modell;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
+import java.util.Objects;
 
 /**
  * Implementar la interfaz Comparable en la clase Socio para que por defecto, se ordene según los números de identificación
  * Id de forma creciente.
  */
 
-public class Socio  implements Comparable{
+public class Socio implements Comparable{
     private int id;
     private String nombre;
     LocalDate fechaNacimiento;
@@ -18,10 +19,8 @@ public class Socio  implements Comparable{
         this.id = id;
         this.nombre = nombre;
         //establecer la fecha de nacimiento en formato Español
-
-        this.fechaNacimiento=LocalDate.parse(fechaNacimiento); // se convierte un String en LocalDate
-
-
+        DateTimeFormatter f=DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        this.fechaNacimiento=LocalDate.parse(fechaNacimiento,f); // se convierte un String en LocalDate
     }
 
     /**
@@ -33,10 +32,12 @@ public class Socio  implements Comparable{
         return (int) this.fechaNacimiento.until(LocalDate.now(),ChronoUnit.YEARS);
     }
 
-//    public int compareTo(Object oj){
-//        int resultado;
-//        //hacer un casting del tipo objeto a tipo Socio
-//        Socio s=(Socio) oj;
+    public int compareTo(Object oj){
+        int resultado;
+        //hacer un casting del tipo objeto a tipo Socio
+        Socio s=(Socio) oj;
+        resultado= Integer.compare(s.id, this.id);
+
 //        if (this.id<s.id){
 //            resultado =-1;
 //        }else if (this.id>s.id){
@@ -44,44 +45,31 @@ public class Socio  implements Comparable{
 //        }else {
 //            resultado=0;
 //        }
-//        return resultado;
-//    }
-
-    public int compareTo(Object otro){
-        int resulado;
-        Socio otroS=(Socio) otro;
-        resulado=this.nombre.compareTo(otroS.nombre);
-        return resulado;
+        return resultado;
     }
 
-    public int getId() {
+//    public int compareTo(Object otro){
+//        int resulado;
+//        Socio otroS=(Socio) otro;
+//        resulado=this.nombre.compareTo(otroS.nombre);
+//        return resulado;
+//    }
+
+    public int getId(){
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public LocalDate getFechaNacimiento() {
-        return fechaNacimiento;
-    }
-
-    public void setFechaNacimiento(LocalDate fechaNacimiento) {
-        this.fechaNacimiento = fechaNacimiento;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Socio socio = (Socio) o;
+        return id == socio.id;
     }
 
     @Override
     public String toString() {
         DateTimeFormatter f=DateTimeFormatter.ofPattern("dd-MM-yyyy");//Se crea el Formato
-
         return "Socio->" +
                 "id=" + id +
                 ", nombre='" + nombre  +
