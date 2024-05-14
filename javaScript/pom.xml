@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.example</groupId>
-  <artifactId>MF0965_3_UF1289_E2</artifactId>
+  <groupId>com.ceatformacion</groupId>
+  <artifactId>javaScript</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>MF0965_3_UF1289_E2 Maven Webapp</name>
+  <name>javaScript Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -13,9 +13,10 @@
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
+
     </dependency>
   </dependencies>
   <build>
-    <finalName>MF0965_3_UF1289_E2</finalName>
+    <finalName>javaScript</finalName>
   </build>
 </project>
