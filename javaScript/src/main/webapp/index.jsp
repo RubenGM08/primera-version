@@ -11,7 +11,9 @@
 <body>
 <p class="parrafo">
 <div id="cuadro"></div>
+<p class="areaTriangulo">
 
+</p>
 
 
 </p>
