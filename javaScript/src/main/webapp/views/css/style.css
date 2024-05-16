@@ -1,0 +1,63 @@
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    padding: 50px;
+    height: 400px;
+    flex-direction: column;
+}
+
+.contenedor1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: azure;
+    padding: 50px;
+    height: 400px;
+}
+
+body{
+    background-color: darkslategrey;
+    font-family: Verdana;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton{
+    padding: 10px 20px;
+    background-color: darkslategrey;
+    color: azure;
+    border-radius: 5px;
+}
+
+.boton:hover{
+    background-color: azure;
+    color: darkslategrey;
+    cursor: pointer;
+}
+
+.derecha{
+    text-align: right;
+}
+
+.izquierda{
+    text-align: left;
+}
+.centrado{
+    text-align: center;
+}
+.cajaflex{
+    display: flex;
+    margin: 10px 0;
+}
+
+.margen-arriba{
+    margin-top: 50px;
+}
+
+.margen-letra{
+    width: 20px;
+}
