@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: PROGRAMACION
-  Date: 16/05/2024
-  Time: 11:25
+  Date: 20/05/2024
+  Time: 16:49
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -13,22 +13,17 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Bombilla 💡</title>
     <link rel="stylesheet" href="views/css/responsive.css">
     <link rel="stylesheet" href="views/css/style.css">
     <link rel="icon" href="views/img/js.png">
-    <script src="views/script/adivinaLaLetra.js"></script>
+    <script src="views/script/bombilla.js"></script>
 </head>
 <body>
-    <div class="contenedor col-8 contenedordiv">
-        <h1 class="centrado">Adivina la Letra</h1>
-        <div id="divLetras" class="col-4"></div>
-        <h2 class="resultado"></h2>
-        <p id="contadorFallos"></p>
-        <div class="cajaflex">
-            <button class="boton" id="nueva">Nueva Partida</button>
-            <button class="boton" id="salir">Salir a Home</button>
-        </div>
-    </div>
+<div class="contenedor col-8">
+    <h2>Pulsar sobre la bombilla para encenderla o apagarla</h2>
+    <img src="views/img/bombilla-off.gif" alt="bombilla" id="bombilla">
+
+</div>
 </body>
 </html>

@@ -61,3 +61,11 @@ body{
 .margen-letra{
     width: 20px;
 }
+
+#contadorFallos{
+    color: red;
+}
+
+#salir,#nueva{
+    display: none;
+}
