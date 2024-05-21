@@ -1,64 +1,97 @@
 window.onload=function () {
-    let div=document.querySelector(".maquina");
-    let img=document.querySelector("#respuestaMaquina");
     let contadorU=0;
     let contadorM=0;
-    let user=document.querySelectorAll('input[type=radio][name="opcion"]')//All cuando son varios
-    user.forEach(function (userOpcion) { //ForEach = por cada uno ... distinto
-        userOpcion.addEventListener("change",function () {
+    let div=document.querySelector(".maquina");
+    let img=document.querySelector("#respuestaMaquina");
+    let user = document.querySelectorAll('input[type=radio][name="opcion"]'); //All cuando son varios
+    user.forEach(function (userOption) {//ForEarch = por cada uno ...distinto
+        userOption.addEventListener("click", function () {
             document.querySelector("#mensaje").innerHTML="";
-            //verificar si ese radio esta marcado,
-            if (this.checked){ //si ese radio esta marcado, hacer lo siguiente
+            //verificar si el radio esta marcado
+            if (this.checked) { //si ese radio esta marcado, hacer lo siguiete
                 //mostrar que opcion marco el cliente
                 let userResp = this.value;
-                let maq=parseInt(Math.random()* 3 + 1);
-                console.log("Usuario-> " + userResp);
-                console.log("Maquina-> " + maq);
-                div.style.visibility="visible"
-                div.classList.add("maquina-respuesta")
-                switch (maq){
-                    case 1:{
-                        img.src="views/img/Piedra.png";
+                let maq = parseInt(Math.random() * 3 + 1);
+                console.log("Maquina->" + maq);
+                console.log("Usuario->" + userResp);
+                div.style.visibility = "visible";
+                div.classList.add("maquina-respuesta");
+                switch (maq) {
+                    case 1: {
+                        img.src = "views/img/Piedra-removebg-preview.png";
                         break;
                     }
-                    case 2:{
-                        img.src="views/img/Papel.png";
+                    case 2: {
+                        img.src = "views/img/Papel-removebg-preview.png";
                         break;
                     }
-                    case 3:{
-                        img.src="views/img/Tijeras.png";
+                    case 3: {
+                        img.src = "views/img/Tijeras-removebg-preview.png";
                         break;
                     }
                 }
 
-                let msn="";
-                if (userResp==maq){
-                    msn="Empate";
-                }else if (userResp==1 && maq==2){
+                let msn = ""
+                if (userResp == maq) {
+                    msn = "Empate";
+                } else if (userResp == 1 && maq == 2) {
                     contadorM++;
-                    msn="Gana la Maquina";
-                }else if (userResp==1 && maq==3){
+                    msn = "Gana la Máquina";
+                } else if (userResp == 1 && maq == 3) {
                     contadorU++;
-                    msn="Gana el Usuario";
-                }else if (userResp==2 && maq==1){
+                    msn = "Ganas el Usuario!"
+                } else if (userResp == 2 && maq == 1) {
                     contadorU++;
-                    msn="Gana el Usuario"
-                }else if (userResp==2 && maq==3){
+                    msn = "Ganas el Usuario!"
+                } else if (userResp == 2 && maq == 3) {
                     contadorM++;
-                    msn="Gana la Maquina";
-                } else if (userResp==3 && maq==1){
+                    msn = "Gana la Máquina";
+                } else if (userResp == 3 && maq == 1) {
                     contadorM++;
-                    msn="Gana la Maquina";
-                } else if (userResp==3 && maq==2){
+                    msn = "Gana la Máquina";
+                } else if (userResp == 3 && maq == 2) {
                     contadorU++;
-                    msn="Gana el Usuario";
+                    msn = "Ganas el Usuario!"
                 }
-                document.querySelector("#mensaje").innerHTML=msn;
-                document.querySelector("#contador").innerHTML=`Usuario: ${contadorU} | Máquina: ${contadorM}`;
+                document.querySelector("#mensaje").innerHTML = msn;
+                document.querySelector("#contador").innerHTML = `Usuario: ${contadorU} | Máquina: ${contadorM}`;
+
+                if (contadorU == 1 || contadorM == 1) {
+                    if (contadorU == 1) {
+                        ganador();
+                    } else {
+                        let marquesina=document.querySelector(".marquesina");
+                        marquesina.style.display="block";
+                        //mostramos carita triste...
+
+                    }
+                    let boton = document.querySelector("#nuevaP");
+                    let salir = document.querySelector("#salir");
+                    boton.style.display = "block";
+                    salir.style.display = "block"
+
+                    boton.addEventListener("click", function () {
+                        window.location.replace("index.jsp");
+                    })
+                    salir.addEventListener("click", function () {
+                        window.close();
+                    })
+                    //tanto si la maquina gana como si el user gana!
+                    user.forEach(function (userOption) {//ForEarch = por cada uno ...distinto
+                        userOption.disabled = true;
+                        let imagenes=document.querySelectorAll(".imagenes");
+                        imagenes.forEach(function (img){
+                            img.style.transform="scale(1.0)";
+                            img.style.filter="grayscale(100%)";
+                            img.addEventListener("mouseover",function (){
+                                img.style.cursor="none";
+                            })
+                        })
+
+                    })
+                }
             }
-
-
         })
-
     })
+
 }
