@@ -42,8 +42,8 @@
         </div>
     </div>
 </div>
-<div class="marquesina col-12">
-    <marquee direction="up"><img src="views/img/carita-triste.png" alt="Carita triste"></marquee>
+<div class="marquesina">
+    <marquee direction="up" height="1000"><img src="views/img/carita-triste.png" alt="Carita triste"></marquee>
 </div>
 </body>
 </html>
