@@ -1,3 +1,10 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: PROGRAMACION
+  Date: 28/05/2024
+  Time: 15:38
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html lang="es">
@@ -6,11 +13,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>📌Registro de Usuario 1</title>
+    <title>📌Registro de Usuario 2</title>
     <link rel="stylesheet" href="views/css/style.css">
     <link rel="stylesheet" href="views/css/responsive.css">
     <link rel="icon" href="views/img/js.png">
-    <script src="views/script/script.js"></script>
+    <script src="views/script/script2.js"></script>
 </head>
 <body>
 <div class="container">
@@ -60,7 +67,6 @@
     <div class="boton"><a href="index.jsp">Formulario 1</a></div>
     <div class="boton"><a href="index2.jsp">Formulario 2</a></div>
     <div class="boton"><a href="index3.jsp">Formulario 3</a></div>
-
 </div>
 
 </body>
