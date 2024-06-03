@@ -22,6 +22,8 @@
         <button><a href="horarios.jsp">Ir a horario</a></button>
         <button><a href="adivinaLaLetra.jsp">Adivina la Letra</a></button>
         <button><a href="bombilla.jsp">Bombilla</a></button>
+        <button><a href="arrays.jsp">Arrays</a></button>
+
     </div>
 </div>
 

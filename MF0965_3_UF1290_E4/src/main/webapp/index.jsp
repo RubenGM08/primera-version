@@ -21,11 +21,14 @@
             <div class="col-11">
                 <label for="fruta" class="col-3">Fruta Favorita:</label>
                 <input type="text" id="fruta" name="fruta" class="col-2">
+
                 <label for="numero">Numero Favorito:</label>
                 <input type="number" id="numero" name="numero" class="col-1">
-                <label for="añoNacimiento">Año de Nacimiento:</label>
-                <input type="number" id="añoNacimiento" name="añoNacimiento" class="col-1">
-                <button id="crear" class="col-1 azul">Crear Contraseña</button>
+
+                <label for="frase" class="col-3">Poner una frase corta:</label>
+                <input type="text" id="frase" name="frase" class="col-2">
+
+                <input type="submit" id="crear" class="col-1 azul" value="CREAR">
             </div>
             <p class="col-12">
                 <label for="contraseña" class="col-3">Contraseña:</label>
