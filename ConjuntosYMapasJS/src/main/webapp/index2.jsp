@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="views/css/responsive.css">
     <link rel="stylesheet" href="views/css/style.css">
     <link rel="icon" href="views/img/js.png">
-    <script src="views/script/script.js"></script>
+    <script src="views/script/script2.js"></script>
     <title>Conjuntos</title>
 </head>
 <body>
     <div class="contenedor2 col-10">
-        <h1>Agenda Telefonica</h1>
+        <h1>Agenta Telefonica</h1>
         <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" id="nombre">
         <label for="telefono">Telefono:</label>
@@ -30,8 +30,6 @@
                 <th>Telefono:</th>
             </tr>
         </table>
-        <button><a href="index2.jsp">Index 2</a></button>
-
     </div>
 
 </body>
