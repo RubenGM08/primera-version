@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: PROGRAMACION
-  Date: 10/06/2024
-  Time: 18:16
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html lang="es">
@@ -13,18 +6,22 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Vehiculos 🚗</title>
     <script src="views/script/vehiculo.js"></script>
+    <link rel="stylesheet" href="views/css/style.css">
 </head>
 <body>
-
-
-
-
-<button><a href="index.jsp">index</a></button>
-<button><a href="login.jsp">login</a></button>
-<button><a href="vehiculo.jsp">vehiculo</a></button>
-<button><a href="lecturaJson.jsp">lecturaJson</a></button>
+    <p class="salida"></p>
+    <table class="container">
+        <tr>
+            <th>Vehiculo</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Color</th>
+            <th>Potencia</th>
+            <th>Gama</th>
+        </tr>
+    </table>
 
 </body>
 </html>

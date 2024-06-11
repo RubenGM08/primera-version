@@ -83,3 +83,10 @@ delete miCoche.potencia;
 for (dato in miCoche){
     console.log(`${dato} : ${miCoche[dato]}`)
 }
+
+let texto=JSON.stringify(miCoche);
+
+console.log(texto);
+console.log(JSON.stringify(miCocheNuevo));
+console.log(JSON.stringify(miMoto));
+

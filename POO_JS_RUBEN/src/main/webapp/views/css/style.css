@@ -1,0 +1,12 @@
+.container{
+    align-items: center;
+    justify-content: center;
+}
+table,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td{
+    padding: 25px;
+    text-align: center;
+}

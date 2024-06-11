@@ -1,0 +1,9 @@
+{
+  "Usuario":"Ruben",
+  "detalles":[
+    { "Vehiculo":"Coche","marca":"Audi", "modelo":"A4", "color":"Blanco", "potencia":"150CV", "gama":"Alta" },
+    { "Vehiculo":"Coche","marca":"Ford", "modelo":"Kuga", "color":"Gris", "potencia":"110CV", "gama":"Media" },
+    { "Vehiculo":"Coche","marca":"Opel", "modelo":"Corsa", "color":"Rojo", "potencia":"136CV", "gama":"Alta" }
+  ]
+}
+

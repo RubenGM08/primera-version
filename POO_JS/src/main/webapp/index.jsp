@@ -19,5 +19,7 @@
 <button><a href="index.jsp">index</a></button>
 <button><a href="login.jsp">login</a></button>
 <button><a href="vehiculo.jsp">vehiculo</a></button>
+<button><a href="lecturaJson.jsp">lecturaJson</a></button>
+
 </body>
 </html>
