@@ -34,10 +34,10 @@ function mostrarAnio() {
 
 function mostrarFullDate() {
     document.querySelector("#salida").textContent=fecha.toLocaleString('es-ES', {
-            weekday: 'long',
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
     }).toUpperCase();
 }
 function mostrarHora() {
